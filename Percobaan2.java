@@ -4,6 +4,7 @@ public class Percobaan2 {
         if (y == 0) {
             return(1);
         }else{
+            System.out.print(x + (y > 1 ? "x" : "x1 = "));
             return (x * hitungPangkat(x, y-1));
         }
     }
@@ -17,6 +18,8 @@ public class Percobaan2 {
         System.out.println("\nPangkat: ");
         pangkat = sc.nextInt();
 
-        System.out.println("\nHasil : "+hitungPangkat(bilangan, pangkat));
+        System.out.println("\nDeret perhitungan: ");
+        int hasil = hitungPangkat(bilangan, pangkat);
+        System.out.println(hasil);
     }
 }
